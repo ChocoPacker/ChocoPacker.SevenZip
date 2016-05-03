@@ -1,0 +1,12 @@
+project.lock.json
+
+bin/
+obj/
+*.dll
+*.log
+.settings/
+.idea/
+*.suo
+.suo
+.vs/**/*
+packages/

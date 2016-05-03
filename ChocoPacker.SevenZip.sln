@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocoPacker.SevenZip", "ChocoPacker.SevenZip\ChocoPacker.SevenZip.csproj", "{1A88E337-7526-4F6A-9FD7-6AA7429F29D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocoPacker.SevenZip.Tests", "ChocoPacker.SevenZip.Tests\ChocoPacker.SevenZip.Tests.csproj", "{E1F6DEFC-65AD-4751-A421-708DF4B90FF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A88E337-7526-4F6A-9FD7-6AA7429F29D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A88E337-7526-4F6A-9FD7-6AA7429F29D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A88E337-7526-4F6A-9FD7-6AA7429F29D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A88E337-7526-4F6A-9FD7-6AA7429F29D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F6DEFC-65AD-4751-A421-708DF4B90FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F6DEFC-65AD-4751-A421-708DF4B90FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F6DEFC-65AD-4751-A421-708DF4B90FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F6DEFC-65AD-4751-A421-708DF4B90FF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

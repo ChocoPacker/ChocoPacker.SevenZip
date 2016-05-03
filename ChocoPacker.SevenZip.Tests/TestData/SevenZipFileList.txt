@@ -1,0 +1,35 @@
+
+7-Zip (a) [32] 15.14 : Copyright (c) 1999-2015 Igor Pavlov : 2015-12-31
+
+Scanning the drive for archives:
+1 file, 27172232 bytes (26 MiB)
+
+Listing archive: C:\Users\Andrew\Downloads\dotnet-dev-win-x64.latest.exe
+
+--
+Path = C:\Users\Andrew\Downloads\dotnet-dev-win-x64.latest.exe
+Type = Cab
+WARNINGS:
+There are data after the end of archive
+Offset = 461824
+Physical Size = 107876
+Tail Size = 26602532
+Method = MSZip
+Blocks = 1
+Volumes = 1
+Volume Index = 0
+ID = 0
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2016-04-28 11:43:28 ....A         8858               0
+2016-01-16 13:19:22 ....A       175616               u0
+2016-04-28 01:18:50 ....A         9492               u1
+2016-04-28 01:18:50 ....A         3943               u2
+2016-04-28 01:18:50 ....A         4054               u3
+2016-04-28 01:18:50 ....A        14123               u4
+2016-04-28 11:43:24 ....A         8258               u5
+------------------- ----- ------------ ------------  ------------------------
+2016-04-28 11:43:28             224344     27172232  7 files
+
+Warnings: 1
