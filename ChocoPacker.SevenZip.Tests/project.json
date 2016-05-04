@@ -1,0 +1,29 @@
+﻿{
+    "version": "1.0.0-*",
+    "description": "ChocoPacker.SevenZip Class Library",
+    "authors": [ "Andrew" ],
+    "dependencies": {
+        "NETStandard.Library": "1.5.0-rc3-*",
+        "xunit": "2.1.0",
+        "ChocoPacker.SevenZip": "*"
+    },
+    "frameworks": {
+        "netcoreapp1.0": {
+            "imports": [
+                "dnxcore50",
+                "portable-net451+win8"
+            ],
+            "dependencies": {
+                "Microsoft.NETCore.App": {
+                    "version": "1.0.0-rc2-3002543",
+                    "type": "platform"
+                },
+                "dotnet-test-xunit": "1.0.0-*"
+            }
+        }
+    },
+    "resource": [
+        "TestData/*.*"
+    ],
+    "testRunner": "xunit"
+}
