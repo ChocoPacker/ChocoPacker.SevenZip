@@ -63,7 +63,7 @@ namespace ChocoPacker.SevenZip.Tests
         }
 
         private static IArchive CreateArchive()
-            => new SevenZipExtractor(@"C:\git\commandlinetool\7za.exe")
-                .OpenArchive(@"C:\Users\Andrew\Downloads\dotnet-dev-win-x64.latest.exe");
+            => new SevenZipExtractor(Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "7z.exe"))
+                .OpenArchive(Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "dotnet-dev-win-x64.latest.exe"));
     }
 }

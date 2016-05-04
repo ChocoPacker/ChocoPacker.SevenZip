@@ -2,7 +2,6 @@ project.lock.json
 
 bin/
 obj/
-*.dll
 *.log
 .settings/
 .idea/
