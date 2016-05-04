@@ -1,5 +1,10 @@
 # 7z.exe wrapper for ChocoPacker
 
+### Build status
+Windows x86/x64
+
+[![Build status](https://ci.appveyor.com/api/projects/status/vheo9e6l200d47yc?svg=true)](https://ci.appveyor.com/project/nitridan/nodetocoreclr-iueo1)
+
 Usage example:
 
 ```csharp
