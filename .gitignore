@@ -7,5 +7,6 @@ obj/
 .idea/
 *.suo
 .suo
-.vs/**/*
+.vs/**/*.*
 packages/
+*.user

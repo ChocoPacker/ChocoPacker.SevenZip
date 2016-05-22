@@ -14,16 +14,21 @@
                 "portable-net451+win8"
             ],
             "dependencies": {
-                "Microsoft.NETCore.App": {
-                    "version": "1.0.0-rc2-3002543",
-                    "type": "platform"
-                },
+              "Microsoft.NETCore.App": {
+                "type": "platform",
+                "version": "1.0.0-rc2-3002702"
+              },
                 "dotnet-test-xunit": "1.0.0-*"
             }
         }
     },
-    "resource": [
+
+    "buildOptions": {
+      "embed": [
         "TestData/*.*"
-    ],
+
+      ]
+    },
+
     "testRunner": "xunit"
 }
