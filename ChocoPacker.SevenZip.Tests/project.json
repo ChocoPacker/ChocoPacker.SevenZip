@@ -3,9 +3,9 @@
     "description": "ChocoPacker.SevenZip Class Library",
     "authors": [ "Andrew" ],
     "dependencies": {
-        "NETStandard.Library": "1.5.0-rc3-*",
-        "xunit": "2.1.0",
-        "ChocoPacker.SevenZip": "*"
+      "ChocoPacker.SevenZip": "*",
+      "NETStandard.Library": "1.6.0",
+      "xunit": "2.1.0"
     },
     "frameworks": {
         "netcoreapp1.0": {
@@ -16,9 +16,9 @@
             "dependencies": {
               "Microsoft.NETCore.App": {
                 "type": "platform",
-                "version": "1.0.0-rc2-3002702"
+                "version": "1.0.0"
               },
-                "dotnet-test-xunit": "1.0.0-*"
+              "dotnet-test-xunit": "1.0.0-*"
             }
         }
     },
