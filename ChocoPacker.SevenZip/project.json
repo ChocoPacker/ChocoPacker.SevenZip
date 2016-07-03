@@ -1,5 +1,5 @@
 ﻿{
-    "version": "0.2.0-release-*",
+    "version": "0.3.0-release-*",
     "name": "ChocoPacker.SevenZip",
 
     "dependencies": {
