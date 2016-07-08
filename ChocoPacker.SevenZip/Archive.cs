@@ -139,7 +139,7 @@ namespace ChocoPacker.SevenZip
             using (var process = new Process {StartInfo = processStartInfo})
             {
                 var outputBuilder = new StringBuilder();
-                process.OutputDataReceived += (sender, e) => outputBuilder.Append(e.Data);
+                process.OutputDataReceived += (sender, e) => outputBuilder.AppendLine(e.Data);
                 process.Start();
                 process.BeginOutputReadLine();
                 process.WaitForExit();

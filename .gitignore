@@ -8,5 +8,6 @@ obj/
 *.suo
 .suo
 .vs/**/*.*
+*.exe
 packages/
 *.user
