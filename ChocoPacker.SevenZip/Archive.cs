@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace ChocoPacker.SevenZip
@@ -130,19 +131,23 @@ namespace ChocoPacker.SevenZip
                 FileName = _sevenZipPath,
                 CreateNoWindow = true,
                 RedirectStandardOutput = true,
+                RedirectStandardInput = true,
                 UseShellExecute = false,
                 Arguments = arguments
             };
 
-            var process = Process.Start(processStartInfo);
-            if (process == null)
-                throw new InvalidOperationException("Can't start process.");
+            using (var process = new Process {StartInfo = processStartInfo})
+            {
+                var outputBuilder = new StringBuilder();
+                process.OutputDataReceived += (sender, e) => outputBuilder.Append(e.Data);
+                process.Start();
+                process.BeginOutputReadLine();
+                process.WaitForExit();
+                if (process.ExitCode != 0)
+                    throw new InvalidOperationException("Archive looks broken, can't extract file list!");
 
-            process.WaitForExit();
-            if (process.ExitCode != 0)
-                throw new InvalidOperationException("Archive looks broken, can't extract file list!");
-
-            return process.StandardOutput.ReadToEnd();
+                return outputBuilder.ToString();
+            }
         }
 
         public void Dispose() => _archiveFile.Dispose();
