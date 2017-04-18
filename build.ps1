@@ -32,7 +32,7 @@ if ($LASTEXITCODE -ne 0){
     exit 1
 }
 
-& dotnet test ChocoPacker.SevenZip.Tests
+& dotnet test ChocoPacker.SevenZip.Tests\ChocoPacker.SevenZip.Tests.csproj
 if ($LASTEXITCODE -ne 0){
     Write-Output 'Failed to run unit tests'
     exit 1
