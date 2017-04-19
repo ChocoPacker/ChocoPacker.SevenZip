@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.DotNet.PlatformAbstractions;
+using System;
 using System.IO;
 using Xunit;
 
@@ -9,9 +10,9 @@ namespace ChocoPacker.SevenZip.Tests
         [Fact]
         public void OpenArchive_Succeed()
         {
-            var extractor = new SevenZipExtractor(Path.Combine(Directory.GetCurrentDirectory(), "TestFiles", "7z.exe"));
+            var extractor = new SevenZipExtractor(Path.Combine(ApplicationEnvironment.ApplicationBasePath, "TestFiles", "7z.exe"));
             var archive = extractor.OpenArchive(
-                Path.Combine(Directory.GetCurrentDirectory(), 
+                Path.Combine(ApplicationEnvironment.ApplicationBasePath, 
                     "TestFiles", 
                     "dotnet-dev-win-x64.latest.exe"));
             Assert.NotNull(archive);
